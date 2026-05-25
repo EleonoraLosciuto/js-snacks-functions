@@ -10,11 +10,12 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 const salutoni = (user) => {
-    let d = new Date;
-    let hour = d.getHours();
+    let d = new Date; // variabile per il giorno attuale
+    let hour = d.getHours(); // variabile per le ore attuali --> nota: getHours restituisce un numero da 0 a 23
     let saluto;
-    if (Math.floor(hour) < 13) {saluto = "buongiono"}
-    else if (Math.floor(hour) < 17) {saluto = "buon pomeriggio"}
+    
+    if (hour < 13) {saluto = "buongiorno"}
+    else if (hour < 17) {saluto = "buon pomeriggio"}
     else {saluto = "buonasera"};
 
     return `${saluto } ${user}`;

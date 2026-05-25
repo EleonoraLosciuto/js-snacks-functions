@@ -5,11 +5,11 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-const nameStartWith = (names, letter) => {
-    let finalArr = [];
-    for (let i = 0; i < names.length; i++) {
-        if (names[i][0].toLowerCase() === letter.toLowerCase()) {
-            finalArr.push(names[i]) };
+const nameStartWith = (names, letter) => { //funzione arrow function con due parametri lista nomi e lettera iniziale
+    let finalArr = []; // array vuoto che riempiró solo con gli elementi che devo filtrare
+    for (let i = 0; i < names.length; i++) { 
+        if (names[i][0].toLowerCase() === letter.toLowerCase()) { // condizione if 
+            finalArr.push(names[i]) }; // se rispettata la condizione if, aggiungo l'elemento al mio array
         };
     return finalArr;
 };

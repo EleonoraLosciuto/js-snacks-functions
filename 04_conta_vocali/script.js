@@ -5,7 +5,7 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 const vowelNum = (string) => {
-    let count = 0;
+    let count = 0; // variabile count che verrá incrementata quando trovo una vocale
     for (let i = 0; i < string.length; i++) {
         if (string[i].toLowerCase() === "a" || string[i].toLowerCase() === "e" || string[i].toLowerCase() === "i" || string[i].toLowerCase() === "o" || string[i].toLowerCase() === "u")
         count += 1;
