@@ -5,9 +5,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+const nameStartWith = (names, letter) => {
+    let finalArr = [];
+    for (let i = 0; i < names.length; i++) {
+        if (names[i][0].toLowerCase() === letter.toLowerCase()) {
+            finalArr.push(names[i]) };
+        };
+    return finalArr;
+};
+
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(nameStartWith(names, "a"));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
